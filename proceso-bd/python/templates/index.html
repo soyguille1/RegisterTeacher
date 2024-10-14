@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Docentes</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar Docente</h1>
+        <form action="/agregar" method="POST">
+            <label for="nombre">Nombre del Docente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="materia">Materia:</label>
+            <input type="text" id="materia" name="materia" required>
+
+            <label for="horas_catedras">Horas Cátedras:</label>
+            <input type="number" id="horas_catedras" name="horas_catedras" required>
+
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
